@@ -2,7 +2,7 @@ import requests
 import json
          
 x=input("Enter the country code: ")
-y=input("Enter zipcode: ")
+y=input("Enter pincode: ")
 response=requests.get("https://api.zippopotam.us/"+x+"/"+y)
 z = json.loads(response.text)
 print("Country: "+z["country"])
